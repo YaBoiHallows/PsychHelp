@@ -24,11 +24,24 @@ client.on("message", message => {
         message.reply('The frontal lobe is sometimes referred to as the "control panel" of our personality. It\'s where emotional expression, problem solving, memory, language, judgment, and sexual behaviors are all controlled at. Damage to the frontal lobe can cause ones personality to completely change, and even for them to have trouble concentrating or planning, as the frontal lobe controls those things.')
     }else if(text.includes(`prefrontal cortex`) || text.includes(`pre-frontal cortex`)){
         if(message.author.bot)return
-        message.reply('The prefrontal cortex is what allows up to create, and complete set goals. It is also involved in many higher level executive functions. It is located in front of the frontal lobe, and also helps in social behaviour.')
+        message.reply('The prefrontal cortex is what allows us to create, and complete set goals. It is also involved in many higher level executive functions. It is located in front of the frontal lobe, and also helps in social behaviour.')
     }else if(text.includes(`temporal lobe`)){
+        if(message.author.bot)return
         message.reply('The function of the temporal lobe is related to the perception of auditory, taste, olfactory sensations, analysis and synthesis of speech sounds, memory mechanisms. It also plays a big part in memory and in storing memories.')
-    }else if(text.includes(``)){
-        
+    }else if(text.includes(`parietal lobe`)){
+        if(message.author.bot)return
+        message.reply('The parietal lobe is largely involved in perception, mainly visual perception. It also plays a part in sensory input aswell as sensation.')   
+    }else if(text.includes(`brain stem`)){
+        if(message.author.bot)return
+        message.reply('The brain stem is basically what keeps you alive. It connects your brain to your spinal cord and is involved in the following, helps keep you breathing, circulates your blood, and in digesting food (although not directly). If the brain stem is damaged it can cause minimal symtpons from dizziness to the most severe symptoms like comas, paralysis and even death.')
+    }else if(text.includes(`cerebellum`)){
+        if(message.author.bot)return
+        message.reply('The cerebellum, in short, is what allows you to walk. It controls movements of the body and is involved in several forms of motor learning.')
+    }else if(text.includes(`occipital lobe`)){
+        if(message.author.bot)return
+        message.reply('This area of the brain is involved in several things ranging from temperature to movement. It regulates taste and touch, and processes them with memories. these memories are associated with taste, touch, sight and sound.')
+    }else if(text.includes(`summary`)){
+        message.reply('In summary:\nFrontal Lobe: thinking, memory, behaviour, movement.\nParietal Lobe: language, touch.\nTemporal Lobe: hearing, learning, feelings.\nCerebellum: balance & coordination.\nBrain Stem: breathing, temperature, heart rate.\nOccipital Lobe: sight.')
     }
 })
 
