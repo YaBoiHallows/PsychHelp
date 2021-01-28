@@ -7,6 +7,14 @@ client.on("ready", () => {
     console.log("PsychHelp is online!")
 })
 
+const KeyEmbed = new MessageEmbed()
+.setTitle("Keywords")
+.addFields(
+    {name: `Lobotomy Information`, value: "```lobotomy | lobotomy details | dr. freeman```", inline: false},
+    {name: `Brain Parts`, value: `frontal lobe | prefrontal cortex | temporal lobe | parietal lobe | brain stem | cerebellum | occipital lobe`, inline: false},
+    {name: `Misc Section`, value: `keywords | summary`, inline: false},
+)
+
 client.on("message", message => {
     const text = message.content.toLowerCase()
     if(text.includes(`lobotomy`) || text.includes(`lobotomies`)){
@@ -42,6 +50,8 @@ client.on("message", message => {
         message.reply('This area of the brain is involved in several things ranging from temperature to movement. It regulates taste and touch, and processes them with memories. these memories are associated with taste, touch, sight and sound.')
     }else if(text.includes(`summary`)){
         message.reply('In summary:\nFrontal Lobe: thinking, memory, behaviour, movement.\nParietal Lobe: language, touch.\nTemporal Lobe: hearing, learning, feelings.\nCerebellum: balance & coordination.\nBrain Stem: breathing, temperature, heart rate.\nOccipital Lobe: sight.')
+    }else if(text.includes(`triggers`) || text.includes(`keywords`)){
+        message.channel.send(KeyEmbed)
     }
 })
 
